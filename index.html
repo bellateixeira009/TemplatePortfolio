@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="tooplate-parallax-depth.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+<!--
+
+Tooplate 2144 Parallax Depth
+
+https://www.tooplate.com/view/2144-parallax-depth
+
+Free HTML CSS Template
+
+-->
+</head>
+<body>
+    <!-- Mouse Follower -->
+    <div class="mouse-follower" id="mouseFollower"></div>
+
+    <!-- Stars Background -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Hero Section with Parallax Layers -->
+    <div class="hero-container" id="hero">
+        <!-- Grid Overlay -->
+        <div class="grid-overlay">
+            <div class="grid-diagonal-1"></div>
+            <div class="grid-diagonal-2"></div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="#hero" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer hexagon -->
+                    <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" 
+                             fill="none" 
+                             stroke="url(#logo-gradient)" 
+                             stroke-width="2"/>
+                    <!-- Inner triangles creating depth -->
+                    <polygon points="50,20 70,35 50,50" 
+                             fill="url(#logo-gradient)" 
+                             opacity="0.8"/>
+                    <polygon points="50,50 70,35 70,65" 
+                             fill="url(#logo-gradient2)" 
+                             opacity="0.6"/>
+                    <polygon points="50,50 70,65 50,80" 
+                             fill="url(#logo-gradient)" 
+                             opacity="0.7"/>
+                    <polygon points="50,20 30,35 50,50" 
+                             fill="url(#logo-gradient2)" 
+                             opacity="0.7"/>
+                    <polygon points="50,50 30,35 30,65" 
+                             fill="url(#logo-gradient)" 
+                             opacity="0.5"/>
+                    <polygon points="50,50 30,65 50,80" 
+                             fill="url(#logo-gradient2)" 
+                             opacity="0.8"/>
+                    <!-- Center gem -->
+                    <polygon points="50,40 60,50 50,60 40,50" 
+                             fill="url(#logo-gradient3)" 
+                             stroke="#00ffcc" 
+                             stroke-width="1"/>
+                    <!-- Gradient definitions -->
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff00ea;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logo-gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff00ea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logo-gradient3" x1="50%" y1="0%" x2="50%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Portfolio</span>
+            </a>
+        </div>
+
+        <!-- Background Layer -->
+        <div class="parallax-layer layer-bg"></div>
+        
+        <!-- Floating Elements Layer -->
+        <div class="parallax-layer layer-float">
+            <!-- Bottom Left Rectangle Group -->
+            <div class="rectangles-bottom-left">
+                <div class="rect rect-bl-1"></div>
+                <div class="rect rect-bl-2"></div>
+                <div class="rect rect-bl-3"></div>
+                <div class="rect rect-bl-4"></div>
+                <div class="rect rect-bl-5"></div>
+                <div class="rect rect-bl-6"></div>
+            </div>
+            
+            <!-- Top Right Rectangle Group -->
+            <div class="rectangles-top-right">
+                <div class="rect rect-tr-1"></div>
+                <div class="rect rect-tr-2"></div>
+                <div class="rect rect-tr-3"></div>
+                <div class="rect rect-tr-4"></div>
+            </div>
+        </div>
+        
+        <!-- Foreground Layer -->
+        <div class="parallax-layer layer-fg">
+            <div class="glowing-orb orb-1"></div>
+            <div class="glowing-orb orb-2"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Isabella Teixeira</h1>
+            <p class="hero-subtitle">Estudante de Informática para Internet</p>
+            <a href="#about" class="cta-button">Explrar portfolio</a>
+        </div>
+
+        <!-- Navigation -->
+        <a href="#about" class="nav-btn-next" title="Next Section">
+            <div class="pyramid">
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-base"></div>
+                <span class="pyramid-inner">▼</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <section class="content-section section-gradient" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sou Isabella Teixeira, mas me chamam de Bella.</h3>
+                    <p>Tenho 15 anos e sou estudante da Etec Professora Maria Cristina Medeiros, cursando Ensino Médio integrado ao curso técnico de Informática para Internet.</p>
+                    <p>Sou apaixonada por artes. Estou sempre ouvindo músicas, gosto de ler artigos, e atualmente atuo como dançarina em um projeto social chamado CiaSacro.</p>
+                </div>
+
+                <div class="foto">
+                    <img src="images/bellaimg.jpg" alt="" class="w-50">
+                </div>
+                    
+                
+
+            </div>    
+        </div>
+
+        <div class="about-boxes">
+            <div class="row text-center">
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <div class="box-icon">🎨
+                            <span class="box-number">1</span>
+                        </div>
+                            <h4 class="box-title">Interesse Artístico</h4>
+                            <p class="box-description">“Tenho uma grande paixão por artes, explorando diferentes formas de expressão como dança e música.”</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <div class="box-icon">  🧠
+                            <span class="box-number">2</span>
+                        </div>
+                        <h4 class="box-title">Criatividade</h4>
+                        <p class="box-description">“Gosto de encontrar soluções inovadoras e pensar fora da caixa, transformando ideias em projetos únicos e originais.”</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <div class="box-icon"> ⏰
+                            <span class="box-number">3</span>
+                        </div>
+                            <h4 class="box-title">Responsabilidade</h4>
+                            <p class="box-description">“Cumpro meus compromissos com dedicação e pontualidade, sempre me esforçando para entregar resultados de qualidade.”</p>
+                    </div>
+                </div>
+
+                        <div class="col-12 col-md-6">
+                        <div class="info-box">
+                            <div class="box-icon">
+                            🗂
+                            <span class="box-number">4</span>
+                            </div>
+                            <h4 class="box-title">Organização</h4>
+                            <p class="box-description">“Cumpro meus compromissos com dedicação e pontualidade, sempre me esforçando para entregar resultados de qualidade.”</p>
+                        </div>
+                        </div>
+
+                    </div>
+                    </div>
+
+        <!-- Navigation -->
+        <a href="#hero" class="nav-btn-prev" title="Previous Section">
+            <div class="hexagon">
+                <span class="hex-content">▲</span>
+            </div>
+        </a>
+        <a href="#features" class="nav-btn-next" title="Next Section">
+            <div class="pyramid">
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-base"></div>
+                <span class="pyramid-inner">▼</span>
+            </div>
+        </a>
+    </section>
+
+    <!-- Features Section with 3D Carousel -->
+    <section class="content-section features-section-bg" id="features">
+        <!-- Grid Overlay -->
+        <div class="features-grid-overlay">
+            <div class="features-grid"></div>
+            <div class="features-grid-large"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="features-container">
+                <div class="carousel-3d" id="carousel">
+                    <div class="feature-card-3d" data-index="0">
+                        <span class="feature-number">01</span>
+                        <div class="feature-icon-3d">🚀</div>
+                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/APOD_NASA/projetoAPI/" target="_blank">Astronomy Picture of the Day</a></h3>
+                        <p class="feature-description-3d">Projeto web interativo usando JavaScript e a API APOD da NASA.</p>
+                    </div>
+                    <div class="feature-card-3d" data-index="1">
+                        <span class="feature-number">02</span>
+                        <div class="feature-icon-3d">🐢</div>
+                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/siteTARTM/" target="_blank">Maré das Tartarugas</a></h3>
+                        <p class="feature-description-3d">Site informativo sobre Tartarugas Marinhas.</p>
+                    </div>
+                    <div class="feature-card-3d" data-index="2">
+                        <span class="feature-number">03</span>
+                        <div class="feature-icon-3d">📋</div>
+                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/JavaScript_Conectados/ToDoList/" target="_blank">To-Do List</a></h3>
+                        <p class="feature-description-3d">Projeto da Lista de Tarefas (To-Do List) usando JavaScript.</p>
+                    </div>
+                    <div class="feature-card-3d" data-index="3">
+                        <span class="feature-number">04</span>
+                        <div class="feature-icon-3d">🙋‍♀️</div>
+                        <h3 class="feature-title-3d"><a href="https://l4ur4r3eiz.github.io/feiratecnologica2025/bootstrap-5.3.8-dist/" target="_blank">Ser Mulher</a></h3>
+                        <p class="feature-description-3d">Projeto interdisciplinar que tem como objetivo explorar a identidade feminina de forma abrangente.</p>
+                    </div>
+                    <div class="feature-card-3d" data-index="4">
+                        <span class="feature-number">05</span>
+                        <div class="feature-icon-3d">🧾</div>
+                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/JavaScript_Conectados/CadastroClientes/" target="_blank">Sistema de Cadastro de Clientes</a></h3>
+                        <p class="feature-description-3d">Projeto Sistema de Cadastro de Clientes usando JavaScript.</p>
+                    </div>
+                    <div class="feature-card-3d" data-index="5">
+                        <span class="feature-number">06</span>
+                        <div class="feature-icon-3d">👩‍🦰</div>
+                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/RitaLee/" target="_blank">Rita Lee</a></h3>
+                        <p class="feature-description-3d">Site biográfico sobre a cantora brasileira Rita Lee.</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <div class="carousel-btn" id="prevBtn">◀</div>
+                    <div class="carousel-btn" id="nextBtn">▶</div>
+                </div>
+                <div class="carousel-indicators" id="indicators"></div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <a href="#about" class="nav-btn-prev" title="Previous Section">
+            <div class="hexagon">
+                <span class="hex-content">▲</span>
+            </div>
+        </a>
+        <a href="#gallery" class="nav-btn-next" title="Next Section">
+            <div class="pyramid">
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-base"></div>
+                <span class="pyramid-inner">▼</span>
+            </div>
+        </a>
+    </section>
+
+    <section class="gallery-section section-gradient" id="gallery">
+        <div class="container text-center text-light">
+            <h2 class="section-title mb-4">Experiências</h2>
+            <img src="https://bellateixeira009.github.io/Curriculo_IW/img/peqtalentos.png" 
+                alt="Projeto Pequenos Talentos" 
+                class="img-fluid rounded shadow-lg img-experiencia" 
+                style="max-width: 400px; cursor: pointer; transition: transform 0.3s ease;"
+                data-bs-toggle="modal" 
+                data-bs-target="#exampleModal"
+                onmouseover="this.style.transform='scale(1.05)'" 
+                onmouseout="this.style.transform='scale(1)'">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-start">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pequenos Talentos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    Participei do projeto <strong>Pequenos Talentos</strong> em 2024, que tem como objetivo capacitar jovens no universo da tecnologia da informação. 
+                    O projeto também contribuiu para minha preparação para o ingresso na ETEC, oferecendo, além de aulas de informática, atividades voltadas ao Vestibulinho.
+                    </p>
+                    <p>
+                    Durante o programa, desenvolvemos raciocínio lógico, criatividade e competências socioemocionais. 
+                    Ao final do ano, recebi um certificado de conclusão, com a carga horária registrada.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Navigation -->
+        <a href="#features" class="nav-btn-prev" title="Previous Section">
+            <div class="hexagon">
+                <span class="hex-content">▲</span>
+            </div>
+        </a>
+        <a href="#contact" class="nav-btn-next" title="Next Section">
+            <div class="pyramid">
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-face"></div>
+                <div class="pyramid-base"></div>
+                <span class="pyramid-inner">▼</span>
+            </div>
+        </a>
+
+
+    <!-- Contact Section -->
+    <section class="content-section contact-section-bg" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em contato</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </div>
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <div class="info-item">
+                        <div class="info-icon">GitHub</div>
+                        <span class="info-text">bellateixeira009</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <span class="info-text">bellateixeira27@gamil.com</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <span class="info-text">55+ (11)98289-4808</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <span class="info-text">123 Design Street, Creative City, DC 12345</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <a href="#gallery" class="nav-btn-prev" title="Previous Section">
+            <div class="hexagon">
+                <span class="hex-content">▲</span>
+            </div>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#hero" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">Sobre mim</a>
+                <a href="#features" class="footer-link">Projetos</a>
+                <a href="#gallery" class="footer-link">Experiências</a>
+                <a href="#contact" class="footer-link">Contato</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <p>© 2048 Parallax Depth Experience. All rights reserved.</p>
+                <p>Design: <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="tooplate-2144-parallax-scripts.js"></script>
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
