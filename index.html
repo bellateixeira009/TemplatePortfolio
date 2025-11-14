@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="tooplate-parallax-depth.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="tooplate-parallax-depth.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!--
 
 Tooplate 2144 Parallax Depth
 
@@ -19,8 +22,8 @@ https://www.tooplate.com/view/2144-parallax-depth
 Free HTML CSS Template
 
 -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Mouse Follower -->
     <div class="mouse-follower" id="mouseFollower"></div>
 
@@ -29,400 +32,776 @@ Free HTML CSS Template
 
     <!-- Hero Section with Parallax Layers -->
     <div class="hero-container" id="hero">
-        <!-- Grid Overlay -->
-        <div class="grid-overlay">
-            <div class="grid-diagonal-1"></div>
-            <div class="grid-diagonal-2"></div>
-        </div>
+      <!-- Grid Overlay -->
+      <div class="grid-overlay">
+        <div class="grid-diagonal-1"></div>
+        <div class="grid-diagonal-2"></div>
+      </div>
 
-        <!-- Logo -->
-        <div class="logo-container">
-            <a href="#hero" class="logo">
-                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Outer hexagon -->
-                    <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" 
-                             fill="none" 
-                             stroke="url(#logo-gradient)" 
-                             stroke-width="2"/>
-                    <!-- Inner triangles creating depth -->
-                    <polygon points="50,20 70,35 50,50" 
-                             fill="url(#logo-gradient)" 
-                             opacity="0.8"/>
-                    <polygon points="50,50 70,35 70,65" 
-                             fill="url(#logo-gradient2)" 
-                             opacity="0.6"/>
-                    <polygon points="50,50 70,65 50,80" 
-                             fill="url(#logo-gradient)" 
-                             opacity="0.7"/>
-                    <polygon points="50,20 30,35 50,50" 
-                             fill="url(#logo-gradient2)" 
-                             opacity="0.7"/>
-                    <polygon points="50,50 30,35 30,65" 
-                             fill="url(#logo-gradient)" 
-                             opacity="0.5"/>
-                    <polygon points="50,50 30,65 50,80" 
-                             fill="url(#logo-gradient2)" 
-                             opacity="0.8"/>
-                    <!-- Center gem -->
-                    <polygon points="50,40 60,50 50,60 40,50" 
-                             fill="url(#logo-gradient3)" 
-                             stroke="#00ffcc" 
-                             stroke-width="1"/>
-                    <!-- Gradient definitions -->
-                    <defs>
-                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#ff00ea;stop-opacity:1" />
-                        </linearGradient>
-                        <linearGradient id="logo-gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" style="stop-color:#ff00ea;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:1" />
-                        </linearGradient>
-                        <linearGradient id="logo-gradient3" x1="50%" y1="0%" x2="50%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span class="logo-text mb-5 gradiente">Portfolio</span>
-            </a>
-        </div>
-
-        <!-- Background Layer -->
-        <div class="parallax-layer layer-bg"></div>
-        
-        <!-- Floating Elements Layer -->
-        <div class="parallax-layer layer-float">
-            <!-- Bottom Left Rectangle Group -->
-            <div class="rectangles-bottom-left">
-                <div class="rect rect-bl-1"></div>
-                <div class="rect rect-bl-2"></div>
-                <div class="rect rect-bl-3"></div>
-                <div class="rect rect-bl-4"></div>
-                <div class="rect rect-bl-5"></div>
-                <div class="rect rect-bl-6"></div>
-            </div>
-            
-            <!-- Top Right Rectangle Group -->
-            <div class="rectangles-top-right">
-                <div class="rect rect-tr-1"></div>
-                <div class="rect rect-tr-2"></div>
-                <div class="rect rect-tr-3"></div>
-                <div class="rect rect-tr-4"></div>
-            </div>
-        </div>
-        
-        <!-- Foreground Layer -->
-        <div class="parallax-layer layer-fg">
-            <div class="glowing-orb orb-1"></div>
-            <div class="glowing-orb orb-2"></div>
-        </div>
-        
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <h1 class="hero-title gradiente">Isabella Teixeira</h1>
-            <p class="hero-subtitle">Estudante de Informática para Internet</p>
-            <a href="#about" class="cta-button gradiente">Explorar portfolio</a>
-        </div>
-
-        <!-- Navigation -->
-        <a href="#about" class="nav-btn-next" title="Next Section">
-            <div class="pyramid">
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-base"></div>
-                <span class="pyramid-inner">▼</span>
-            </div>
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="#hero" class="logo">
+          <svg
+            class="logo-svg"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Outer hexagon -->
+            <polygon
+              points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5"
+              fill="none"
+              stroke="url(#logo-gradient)"
+              stroke-width="2"
+            />
+            <!-- Inner triangles creating depth -->
+            <polygon
+              points="50,20 70,35 50,50"
+              fill="url(#logo-gradient)"
+              opacity="0.8"
+            />
+            <polygon
+              points="50,50 70,35 70,65"
+              fill="url(#logo-gradient2)"
+              opacity="0.6"
+            />
+            <polygon
+              points="50,50 70,65 50,80"
+              fill="url(#logo-gradient)"
+              opacity="0.7"
+            />
+            <polygon
+              points="50,20 30,35 50,50"
+              fill="url(#logo-gradient2)"
+              opacity="0.7"
+            />
+            <polygon
+              points="50,50 30,35 30,65"
+              fill="url(#logo-gradient)"
+              opacity="0.5"
+            />
+            <polygon
+              points="50,50 30,65 50,80"
+              fill="url(#logo-gradient2)"
+              opacity="0.8"
+            />
+            <!-- Center gem -->
+            <polygon
+              points="50,40 60,50 50,60 40,50"
+              fill="url(#logo-gradient3)"
+              stroke="#00ffcc"
+              stroke-width="1"
+            />
+            <!-- Gradient definitions -->
+            <defs>
+              <linearGradient
+                id="logo-gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #00d9ff; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #ff00ea; stop-opacity: 1"
+                />
+              </linearGradient>
+              <linearGradient
+                id="logo-gradient2"
+                x1="100%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #ff00ea; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #00ffcc; stop-opacity: 1"
+                />
+              </linearGradient>
+              <linearGradient
+                id="logo-gradient3"
+                x1="50%"
+                y1="0%"
+                x2="50%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #00ffcc; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #00d9ff; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text mb-5 gradiente">Portfolio</span>
         </a>
+      </div>
+
+      <!-- Background Layer -->
+      <div class="parallax-layer layer-bg"></div>
+
+      <!-- Floating Elements Layer -->
+      <div class="parallax-layer layer-float">
+        <!-- Bottom Left Rectangle Group -->
+        <div class="rectangles-bottom-left">
+          <div class="rect rect-bl-1"></div>
+          <div class="rect rect-bl-2"></div>
+          <div class="rect rect-bl-3"></div>
+          <div class="rect rect-bl-4"></div>
+          <div class="rect rect-bl-5"></div>
+          <div class="rect rect-bl-6"></div>
+        </div>
+
+        <!-- Top Right Rectangle Group -->
+        <div class="rectangles-top-right">
+          <div class="rect rect-tr-1"></div>
+          <div class="rect rect-tr-2"></div>
+          <div class="rect rect-tr-3"></div>
+          <div class="rect rect-tr-4"></div>
+        </div>
+      </div>
+
+      <!-- Foreground Layer -->
+      <div class="parallax-layer layer-fg">
+        <div class="glowing-orb orb-1"></div>
+        <div class="glowing-orb orb-2"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1 class="hero-title gradiente">Isabella Teixeira</h1>
+        <p class="hero-subtitle">Estudante de Informática para Internet</p>
+        <a href="#about" class="cta-button gradiente">Explorar portfolio</a>
+      </div>
+
+      <!-- Navigation -->
+      <a href="#about" class="nav-btn-next" title="Next Section">
+        <div class="pyramid">
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-base"></div>
+          <span class="pyramid-inner">▼</span>
+        </div>
+      </a>
     </div>
 
     <!-- About Section -->
     <section class="content-section section-gradient" id="about">
-        <div class="container">
-            <h2 class="section-title">Sobre mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Sou Isabella Teixeira, mas me chamam de Bella.</h3>
-                    <p>Tenho 15 anos e sou estudante da Etec Professora Maria Cristina Medeiros, cursando Ensino Médio integrado ao curso técnico de Informática para Internet.</p>
-                    <p>Sou apaixonada por artes. Estou sempre ouvindo músicas, gosto de ler artigos, e atualmente atuo como dançarina em um projeto social chamado CiaSacro.</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3 class="hero-title gradiente">
+              Sou Isabella Teixeira, mas me chamam de Bella.
+            </h3>
+            <p>
+              Tenho 15 anos e sou estudante da Etec Professora Maria Cristina
+              Medeiros, cursando Ensino Médio integrado ao curso técnico de
+              Informática para Internet.
+            </p>
+            <p>
+              Sou apaixonada por artes. Estou sempre ouvindo músicas, gosto de
+              ler artigos, e atualmente atuo como dançarina em um projeto social
+              chamado CiaSacro.
+            </p>
+          </div>
 
-                <div class="foto">
-                    <img src="images/bellaimg.jpg" alt="" class="w-50">
-                </div>
-                    
-                
-
-            </div>    
+          <div class="foto">
+            <img src="images/bellaimg.jpg" alt="" class="w-50" />
+          </div>
         </div>
+      </div>
 
-        <div class="about-boxes">
-            <div class="row text-center">
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <div class="box-icon">🎨
-                            <span class="box-number">1</span>
-                        </div>
-                            <h4 class="box-title">Interesse Artístico</h4>
-                            <p class="box-description">“Tenho uma grande paixão por artes, explorando diferentes formas de expressão como dança e música.”</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <div class="box-icon">  🧠
-                            <span class="box-number">2</span>
-                        </div>
-                        <h4 class="box-title">Criatividade</h4>
-                        <p class="box-description">“Gosto de encontrar soluções inovadoras e pensar fora da caixa, transformando ideias em projetos únicos e originais.”</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <div class="box-icon"> ⏰
-                            <span class="box-number">3</span>
-                        </div>
-                            <h4 class="box-title">Responsabilidade</h4>
-                            <p class="box-description">“Cumpro meus compromissos com dedicação e pontualidade, sempre me esforçando para entregar resultados de qualidade.”</p>
-                    </div>
-                </div>
-
-                        <div class="col-12 col-md-6">
-                        <div class="info-box">
-                            <div class="box-icon">
-                            🗂
-                            <span class="box-number">4</span>
-                            </div>
-                            <h4 class="box-title">Organização</h4>
-                            <p class="box-description">“Cumpro meus compromissos com dedicação e pontualidade, sempre me esforçando para entregar resultados de qualidade.”</p>
-                        </div>
-                        </div>
-
-                    </div>
-                    </div>
-
-        <!-- Navigation -->
-        <a href="#hero" class="nav-btn-prev" title="Previous Section">
-            <div class="hexagon">
-                <span class="hex-content">▲</span>
+      <div class="about-boxes">
+        <div class="row text-center">
+          <div class="col-12 col-md-6">
+            <div class="info-box">
+              <div class="box-icon">
+                🎨
+                <span class="box-number">1</span>
+              </div>
+              <h4 class="box-title">Interesse Artístico</h4>
+              <p class="box-description">
+                “Tenho uma grande paixão por artes, explorando diferentes formas
+                de expressão como dança e música.”
+              </p>
             </div>
-        </a>
-        <a href="#features" class="nav-btn-next" title="Next Section">
-            <div class="pyramid">
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-base"></div>
-                <span class="pyramid-inner">▼</span>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="info-box">
+              <div class="box-icon">
+                🧠
+                <span class="box-number">2</span>
+              </div>
+              <h4 class="box-title">Criatividade</h4>
+              <p class="box-description">
+                “Gosto de encontrar soluções inovadoras e pensar fora da caixa,
+                transformando ideias em projetos únicos e originais.”
+              </p>
             </div>
-        </a>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="info-box">
+              <div class="box-icon">
+                ⏰
+                <span class="box-number">3</span>
+              </div>
+              <h4 class="box-title">Responsabilidade</h4>
+              <p class="box-description">
+                “Cumpro meus compromissos com dedicação e pontualidade, sempre
+                me esforçando para entregar resultados de qualidade.”
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="info-box">
+              <div class="box-icon">
+                🗂
+                <span class="box-number">4</span>
+              </div>
+              <h4 class="box-title">Organização</h4>
+              <p class="box-description">
+                “Cumpro meus compromissos com dedicação e pontualidade, sempre
+                me esforçando para entregar resultados de qualidade.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <a href="#hero" class="nav-btn-prev" title="Previous Section">
+        <div class="hexagon">
+          <span class="hex-content">▲</span>
+        </div>
+      </a>
+      <a href="#features" class="nav-btn-next" title="Next Section">
+        <div class="pyramid">
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-base"></div>
+          <span class="pyramid-inner">▼</span>
+        </div>
+      </a>
     </section>
 
     <!-- Features Section with 3D Carousel -->
     <section class="content-section features-section-bg" id="features">
-        <!-- Grid Overlay -->
-        <div class="features-grid-overlay">
-            <div class="features-grid"></div>
-            <div class="features-grid-large"></div>
-        </div>
-        
-        <div class="container">
-            <h2 class="section-title">Projetos</h2>
-            <div class="features-container">
-                <div class="carousel-3d" id="carousel">
-                    <div class="feature-card-3d" data-index="0">
-                        <span class="feature-number">01</span>
-                        <div class="feature-icon-3d">🚀</div>
-                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/APOD_NASA/projetoAPI/" target="_blank">Astronomy Picture of the Day</a></h3>
-                        <p class="feature-description-3d">Projeto web interativo usando JavaScript e a API APOD da NASA.</p>
-                    </div>
-                    <div class="feature-card-3d" data-index="1">
-                        <span class="feature-number">02</span>
-                        <div class="feature-icon-3d">🐢</div>
-                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/siteTARTM/" target="_blank">Maré das Tartarugas</a></h3>
-                        <p class="feature-description-3d">Site informativo sobre Tartarugas Marinhas.</p>
-                    </div>
-                    <div class="feature-card-3d" data-index="2">
-                        <span class="feature-number">03</span>
-                        <div class="feature-icon-3d">📋</div>
-                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/JavaScript_Conectados/ToDoList/" target="_blank">To-Do List</a></h3>
-                        <p class="feature-description-3d">Projeto da Lista de Tarefas (To-Do List) usando JavaScript.</p>
-                    </div>
-                    <div class="feature-card-3d" data-index="3">
-                        <span class="feature-number">04</span>
-                        <div class="feature-icon-3d">🙋‍♀️</div>
-                        <h3 class="feature-title-3d"><a href="https://l4ur4r3eiz.github.io/feiratecnologica2025/bootstrap-5.3.8-dist/" target="_blank">Ser Mulher</a></h3>
-                        <p class="feature-description-3d">Projeto interdisciplinar que tem como objetivo explorar a identidade feminina de forma abrangente.</p>
-                    </div>
-                    <div class="feature-card-3d" data-index="4">
-                        <span class="feature-number">05</span>
-                        <div class="feature-icon-3d">🧾</div>
-                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/JavaScript_Conectados/CadastroClientes/" target="_blank">Sistema de Cadastro de Clientes</a></h3>
-                        <p class="feature-description-3d">Projeto Sistema de Cadastro de Clientes usando JavaScript.</p>
-                    </div>
-                    <div class="feature-card-3d" data-index="5">
-                        <span class="feature-number">06</span>
-                        <div class="feature-icon-3d">👩‍🦰</div>
-                        <h3 class="feature-title-3d"><a href="https://bellateixeira009.github.io/RitaLee/" target="_blank">Rita Lee</a></h3>
-                        <p class="feature-description-3d">Site biográfico sobre a cantora brasileira Rita Lee.</p>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <div class="carousel-btn" id="prevBtn">◀</div>
-                    <div class="carousel-btn" id="nextBtn">▶</div>
-                </div>
-                <div class="carousel-indicators" id="indicators"></div>
-            </div>
-        </div>
+      <!-- Grid Overlay -->
+      <div class="features-grid-overlay">
+        <div class="features-grid"></div>
+        <div class="features-grid-large"></div>
+      </div>
 
-        <!-- Navigation -->
-        <a href="#about" class="nav-btn-prev" title="Previous Section">
-            <div class="hexagon">
-                <span class="hex-content">▲</span>
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+        <div class="features-container">
+          <div class="carousel-3d" id="carousel">
+            <div class="feature-card-3d" data-index="0">
+              <span class="feature-number">01</span>
+              <div class="feature-icon-3d">🚀</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://bellateixeira009.github.io/APOD_NASA/projetoAPI/"
+                  target="_blank"
+                  >Astronomy Picture of the Day</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Projeto web interativo usando JavaScript e a API APOD da NASA.
+              </p>
             </div>
-        </a>
-        <a href="#gallery" class="nav-btn-next" title="Next Section">
-            <div class="pyramid">
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-base"></div>
-                <span class="pyramid-inner">▼</span>
+            <div class="feature-card-3d" data-index="1">
+              <span class="feature-number">02</span>
+              <div class="feature-icon-3d">🐢</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://bellateixeira009.github.io/siteTARTM/"
+                  target="_blank"
+                  >Maré das Tartarugas</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Site informativo sobre Tartarugas Marinhas.
+              </p>
             </div>
-        </a>
+            <div class="feature-card-3d" data-index="2">
+              <span class="feature-number">03</span>
+              <div class="feature-icon-3d">📋</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://bellateixeira009.github.io/JavaScript_Conectados/ToDoList/"
+                  target="_blank"
+                  >To-Do List</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Projeto da Lista de Tarefas (To-Do List) usando JavaScript.
+              </p>
+            </div>
+            <div class="feature-card-3d" data-index="3">
+              <span class="feature-number">04</span>
+              <div class="feature-icon-3d">🙋‍♀️</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://l4ur4r3eiz.github.io/feiratecnologica2025/bootstrap-5.3.8-dist/"
+                  target="_blank"
+                  >Ser Mulher</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Projeto interdisciplinar que tem como objetivo explorar a
+                identidade feminina de forma abrangente.
+              </p>
+            </div>
+            <div class="feature-card-3d" data-index="4">
+              <span class="feature-number">05</span>
+              <div class="feature-icon-3d">🧾</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://bellateixeira009.github.io/JavaScript_Conectados/CadastroClientes/"
+                  target="_blank"
+                  >Sistema de Cadastro de Clientes</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Projeto Sistema de Cadastro de Clientes usando JavaScript.
+              </p>
+            </div>
+            <div class="feature-card-3d" data-index="5">
+              <span class="feature-number">06</span>
+              <div class="feature-icon-3d">👩‍🦰</div>
+              <h3 class="feature-title-3d">
+                <a
+                  href="https://bellateixeira009.github.io/RitaLee/"
+                  target="_blank"
+                  >Rita Lee</a
+                >
+              </h3>
+              <p class="feature-description-3d">
+                Site biográfico sobre a cantora brasileira Rita Lee.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-btn" id="prevBtn">◀</div>
+            <div class="carousel-btn" id="nextBtn">▶</div>
+          </div>
+          <div class="carousel-indicators" id="indicators"></div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <a href="#about" class="nav-btn-prev" title="Previous Section">
+        <div class="hexagon">
+          <span class="hex-content">▲</span>
+        </div>
+      </a>
+      <a href="#gallery" class="nav-btn-next" title="Next Section">
+        <div class="pyramid">
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-face"></div>
+          <div class="pyramid-base"></div>
+          <span class="pyramid-inner">▼</span>
+        </div>
+      </a>
     </section>
 
     <section class="gallery-section section-gradient" id="gallery">
-        <div class="container text-center text-light">
-            <h2 class="section-title mb-4">Experiências</h2>
-            <img src="https://bellateixeira009.github.io/Curriculo_IW/img/peqtalentos.png" 
-                alt="Projeto Pequenos Talentos" 
-                class="img-fluid rounded shadow-lg img-experiencia" 
-                style="max-width: 400px; cursor: pointer; transition: transform 0.3s ease;"
-                data-bs-toggle="modal" 
-                data-bs-target="#exampleModal"
-                onmouseover="this.style.transform='scale(1.05)'" 
-                onmouseout="this.style.transform='scale(1)'">
+      <div class="container text-center text-light">
+        <h2 class="section-title mb-4">Experiências</h2>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-start">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Pequenos Talentos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                    Participei do projeto <strong>Pequenos Talentos</strong> em 2024, que tem como objetivo capacitar jovens no universo da tecnologia da informação. 
-                    O projeto também contribuiu para minha preparação para o ingresso na ETEC, oferecendo, além de aulas de informática, atividades voltadas ao Vestibulinho.
-                    </p>
-                    <p>
-                    Durante o programa, desenvolvemos raciocínio lógico, criatividade e competências socioemocionais. 
-                    Ao final do ano, recebi um certificado de conclusão, com a carga horária registrada.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-                </div>
-            </div>
-            </div>
+        <div class="experiencias-container">
+          <!-- PEQUENOS TALENTOS -->
+          <img
+            src="https://bellateixeira009.github.io/Curriculo_IW/img/peqtalentos.png"
+            alt="Projeto Pequenos Talentos"
+            class="img-fluid rounded shadow-lg img-experiencia"
+            data-bs-toggle="modal"
+            data-bs-target="#modalPequenosTalentos"
+          />
+
+          <!-- CIASACRO -->
+          <img
+            src="https://bellateixeira009.github.io/Curriculo_IW/img/sacrologo.jpg"
+            alt="CiaSacro"
+            class="img-fluid rounded shadow-lg img-experiencia"
+            data-bs-toggle="modal"
+            data-bs-target="#modalCiaSacro"
+          />
+
+          <!-- HHI BRAZIL -->
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="HHI Brazil"
+            class="img-fluid rounded shadow-lg img-experiencia"
+            data-bs-toggle="modal"
+            data-bs-target="#modalHHI"
+          />
+
+          <!-- CONECTADOS -->
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Projeto Conectados"
+            class="img-fluid rounded shadow-lg img-experiencia"
+            data-bs-toggle="modal"
+            data-bs-target="#modalConectados"
+          />
+
+          <!-- MONUEM -->
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEREBUTEhMWFRUWFRgWFRUXGB8VFxsYGRkWGBsXGB0YHSghGB4lGxUeITMhJSsrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGy4lICYrLTY1MDItLTA1LjEvLS0vLysvLS0tLS0tLS8vLS0tNS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAwQFBgIB/8QAQBAAAgIBAgQDBQUFBgUFAAAAAQIAAxEEIQUSMUETUWEGIjJxgRRCkaGxIzNSYnIVY5KiwfAkU4LR8QcWstLh/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAIDBAUBBgf/xAA4EQACAgEBBQUGBQQBBQAAAAAAAQIDEQQSITFBUQUTYXHRFCIygZHBI6Gx4fAzQlLxohUkYnKC/9oADAMBAAIRAxEAPwCtPrj88EAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEA+qMnA3J2AnjeD1Jt4RY1ugtpIFtbISMjmGMj0kK7YWfC8lltFlWNtYyVpYVCAIAgCAIAgCAIB9AngSb4HpqWAyVIHyM8249Sfdz6M8T0gJ6BAEAQBAEAQBAEAQBAEAQBAEA3NNwfUUZtsQoBVYyNt8QU46H3SM5wd9vSYp6iuz3IvO9HQr0ltXvyWNzwX6gdRwhs7vprMjz5Dj8sMf8ADKX+Fq1jhJGlZv0Dzxg/yOfsX/h0P97Yv+Woj9T+M2xf4jXgvuc2S/BT8X9ipLigQBAEAQBAEAQC5wzRX2v+wV2Yd12x827fjKbbK4L32X0U22S/CTbOi0/stxH4mt8LzLWnI/w5/WYZazT8FHPyOnHs7V8ZTx8zL9pa6lNapat1gU+NYoAUnPu9NiQMgnvtmaNI5vLawuSMuvVcXGMZbUubMWbDniAIAgCAIAgCAIAgCAIAgCAbvs7whrB9oBBWqxQV7k9c/LOJi1V6i+76o6Oi0jsXe8kzS9ibzbRqdKTkvWzpnzI5W/MqfxmfWw2JwtXI19m2d5XZQ3xTaMv2X4slDWJcCarkKOAMkdcHHyJH1mnV0O1KUOKMmh1MaZShZ8MlhkN2mDryUnmrq5ne5x4a5bA7nbZFAHUnO09jNxe1Pi+XErnWprZqeYrLbe4yprMQgCAIAgCAIAAnjeAlk3uH6u2rSFQ7V1vZzeLV7xDY5fDswQVyACP9e2K2EZXZxlpcH+qOlTZOujCeE3xX6M+cP4FbrGPJctmNyzeJgfMsmM+mYs1MKFvjj6CnR2alvZnnHXJcf2VoqP8AxGtqXzVBzN+ufyla1tk/6dbLn2bVX/VtS8jN40uhCqNK1rMD7zOMKR+RBz6TRQ7227cYMmqWlSSpbb8TImoxCAIAgCAIAgCAIAgCAIBPXorWraxUYovxMBkD5mVu2Ckot72WxpslFzS3Lmdd/wCmd/7S6o9GQNj+kkH/AOQ/Cc3tOO6Mzs9iT96db5owuE3nR65c7Cu01v8A05KH8t/pNd0e+0/yyYNPN6bVeTwS8V4dWdZfyuBSjczuNwObfkX+JskqB6ehkKrpKmO73ny+5O/Tweom0/cT4/ZeJW1Bsvrc1ry0Ucp5AenOeUMf42Pc/oJZBRrktp5lIqsc7oNwWIR5efPxZY4pUG0GlsAAINtbYHU83MCfXGZCqTV84+TLNRFPS1TS6ow5tOcIAgCAIAgG97Irh7rcfutPY/1IwPyJmLWv3Yw6tHS7NWJTs/xiypw5baqW1C8pr5xU6NuHyObBHQjH1EnbsTmq3x456FNPeV1u5fDnDXUu2XqunIrLjTvZzEKffrs5ccj9PEQgbHIzjzEpUW7PextJc+DXVeJoc1Gl7GdhvlxT6Pqi1w/2Ka1A/iGtCvMGdFAwd8+7ae3nIWdoqD2cZfn+xbV2RKyO1tYXiv3PrcH4bT+91ZsI+7UP+3Nj8RC1Gps+GGPM9ek0VX9SzPkZHG7dGxX7LXYmM8xc5DeRAycf72mqiNy/qtMw6qWmeO5i15mXNJjEAQBAEAQBAEAQBAEA6vguqsrbS15JpvrdHT7pJexWPz+HfynMuhGW3L+5NfY7OmsnDu4p+7JPd9TG9ndU1V3MvXkYj15R4gH1KY+s06qCnXvMWisdduV4+ppe1ukFmuHgkMb1RwPIsO/kMDmPzMp0djhQ9v8Atyae0a1ZqV3f9yTK6pVYy1czLQjqgZQMvY+QbTnt7v0UAdzJNzjmePeaz5LoQUa5tV5xFPHm3z/nIucD0DJdrNKTk+BYM+ZQqVOPrn6yF9ilCu1dUXaWhwstof8Ai/y4FVtXX/ZgqY/tDb4qDH3TzId+3wn8RJqEvattcMYKXZD2Lu5fFnKMGbjmiAIAgCAIBucA1qJTqasHxLk5U8tlc4+ZOB9Zi1NcnOE+SOjo7oRqsr/uktxLxGorw7SoBvbZZZ9dlX8jI1yT1E5dETug46SqHNts96zTV6S2xF5nCBF1CsRy2K4BPLge6VJGOu+D2OYxlK6Kb3ZzjwwSsrhppuMcvGNrxz6FfT6LVm3wdNZYylfErIcoprPRjuANzgjzyJY7KdjbsSzwe7mVRq1Ds7uptrit/Ig17ailuXU1gn+8UbjzDrgn6NJ1quazW/p6FdrtreLY/VfcgXT12/usq/8Ay2OQ39Dbb/yn6Eye3OHx7119UV93Cz4Nz6ejKJEu4mZrAnoEAQBAEAQBAEAQBPAdf7GlL18BjiypjbQfmuGX5Zw3/iczXKVb21we5nb7Mcbo90/iW9ehhcM0z16pEdSpRsuD2VQSxPpyg7zXbZGVTafEwUVTheoyWMHzTfsdObPv25rT0QY8RvrkJ/iiX4lijyW9+fL1EPw6nPnLcvLn6ECsRRkdRbn/AC7foZJrNnyK4tqtNf5G5xzXBdRZqabRm1a+TkYFhshfmHbdMYPXm+cy0VuUFXNbln9jdqrlG13Vy3ySxj8/0Oe1F7WNzMcn5AD5AAAAegm6EFBYRzJ2Sm8yIpMgIAgCAIAgH1SQcjYjoRPGk1gJ43mzodb4zp49u62o/O5OORdmUbbHABA74MyWVd2n3ceKa3HQpu72S72XBp7+nQj4lrBdbqrB8L9Pl4iY/IT2qvYjCL5ehC+3vZ2TXP1JOEatvCdNyURmAzylqm/e1g9tgHHqp85C+tbSl1/Xk/sWaa2Sg480vqua+5a4dpq7ByV6lCh60agmsj1RhkBv5lx6jG0hbKUHmUN/VFtNcLFsxsWP8Zfb9i/R7DYcs+oTwl97I+LlG+/Zdu+8ql2jmOFF5NEOx0p5c1so532i1Fdmqter4GbI7Z2GT9WyfrN2mjKNUVPicvWzhO+Uq+BnTQZRAEAQBAEAQBAEA6D2c12nNbaXUrhLG5lt7o+AASew26+pzsZh1Vdikra+K5dTp6K6lwdFy3N8ejK3EeH36C9TncHmqsHwsB3H06j18pOu2Gpra+qKrqLdHan9H1NLjvtLqb1FYChLQOXlB5iCcFCST0YEbdceso0+krre0+K/mTVqtfdclBYxL6+RWe4pbaasE6atUryoYYVwtjgHbJZmOfJjJbOYx2v7nv8AsV7ezOTh/Ykl92ScQ1VWq0j2LWqXo6NaF2Vl95ecDtu4z9IrhKm5RbzF8PQ9ushqKHJLE01nHPxObnQOUIAgCAIAgCAIAgCAb/Abq9PRZfYgdi6pSjdOdRzFiO4HMPriYdRGVtiri8dTp6SUKapWzWXnCXj1PVvFrmSrU3HmIvIT3QMoF/aKMDddwPxnipgpOqHT8+R7LU2SjG6z/Ld5c/keNJwFLNTbR4orK70lujg7gfMqQdvWSlqZRrjPZz1I16OFl0q3LD5eP8RV4hwjU6NwzqVwfdsXdfow/Qydd9V6wvoVXaa/SyzJfPkQ2Itql0AVwMug2BA6ug7eZXt1G2wkm63sy4dfsyuSVqco7nzX3RRmgzCAIAgCAIAgCAIB044FXqdItul3trUC+ruSOrL8/LuPUYnO9pnVa4W8HwZ1/YoX0Kyj4kt6Hs5xlGQ6TVL4lR/d/wASt2UEkYz0G+x9Dt5qaGn31Twxo9XFxenvWY8vDwIKLqPGrFK2BKBbcTaRzZC8wGF2ABQD6mTlGew3NrMsLcVwlU7Eq08Ry95lcL1j1XK6jnOcFTuHDbFT55ziabq4yhsvd9jJp7pV2qS3+HXPI19fRpaC70Xhg6Mng45mBdccpYe6QpOc/wAo69ZlrlbZiM48Hx8jbdCiranXPisY8/Q52bzlCegQBAEAQBAEAQBANjhh01iouptasVljhULcwbB2I+E7eXTEx2q2Mm61nP5G+h0Tio3Sax4cckXtBq/EtwFC1ooWlR0FfUH5tnJ7/hJ6avZhl8Xx8yGtt254SxFcPL9yTWaZr/s3IMtZWK8dMtWzJ1P8oWRrkq9tPgnn6k7YSu7tx4tY+aLOj47rNGxqsBZRsarRkY9CdwPltIS01N62obvFFlet1GmexPeujL12r0BT7RVp3Fq55qwwCKTsGYZ3XJ+6PQ4zKFXqE+7nLc+ZolbpHHvq4Pa6dPHyORE6hxBPQIAgCAIAgCAIBd4TxOzTWiys7jqOzDup9JTdTG2OzI0abUzontxOt4hwiniNY1OlZa7ScPWxwC2M4Pk3fPf85zK756aXd2LKO1dpqtbDvqXiXNePqYupq5LdVuGYacByu48RjSr4Pf3i35zVB7UIf+35b8GGcdidm/fs78dd2SXgy6S41D9xehXBJzVaVI+LPwsf9e/SeX99XtP4ov6olplp7dlfDNfRmRxjhVmmsKOpABPK3Zh2IPfb8JpovhbHMWYtTpp0TcZIoy8zCAIAgCAIAgCAIAgFrh/D7b35KkLN+QHmT2EqtthVHaky6iiy6WzBZOg4j9l0jYONTeqqgB/c1lVA3H3znJx+kw1d7d/4xb+bOld7Ppnj45pY8F6mQ1h+yVMCQUvsAI2IytTDHluJqUV30k+aRkcn3EZLipP7G1wv2lrvAp4gq2L0W0jDKfUjcf1D6zLdo5VvboePA20doQuXd6pZXUlHBtFXcHTWBFU+/VYPeK913xkMpx0OQe8h7RdOGzKGX1RP2TTQs2o24XR/occ+MnHTO3ynVjwWTiSxl44HyekRAEAQBAEAQBAOi0PDuH3KqjUWVW4GTYB4ZbuBjpv5mYJ26ittuKa8DqVafSWxUVNqXjwPOp4JqtISWr8Wptn5PeRl6743UjqGxsYWoqvXHEvES0d+me9bUX05kFel8NtVWM48DmXIwcc1NgyOx5Tv8pNz2lCXj6orjXsOyC/x9GWqKdCyJXappLIrJqQxZSxA5g6nYAPkbeXUdZXKV6blHfv4FsIaWUVCS2W1ul6/Ml49Xq10orvPMlbr4dmQyupDYw3Ukfod+gzHTup27UFhtcOhPVx1Co2LN6T3PqcvOkccQBAEAQBAEAQBAEA3PZtbyLRQ4RiFDZcIAp5s2HPXHTbpzZ8pi1TgnHbWV/Nx0dCrGpKt4fnjd1LCHSVEVVouobrbc+fDVR8XIAfL73njGcyt97NbUnsrklxLc6et7EFtvm3w+RW0FNbUoLCwrNt1h5d3K11IcDO2e0ssnKM248cJfVlVUISrSlwy344SLn/t6jUoX0NpLAZai3Af6Hp+o9ZX7XZVLF63dUXew1Xx2tNLf0fEylrYn7PapWxdqywwQe1Zz91u3kTnoTL3JL8SD3c/XzMezJ/hWLD5enkZs0mRiegQBAEAQBAEAQDreG+zP2vSrYlieIBg9sEdEfz26N1xjY9Ry7NW6bXFrd/OB2qez1qaFOLWf5ufqZ/2zX6A+GWesdgcMh/pzkfhL1Xp9R725mZ26vR+621+hW4XqWs1WbGJN3NW7H+8UoD9CR+EsurUavd5b/oVaexzvzN/FlP5knCeHai1GRaXsrDe9jAKuOpUttzeY77Z7EQutri1Law/sTo091kXFRbWfo/Aj13B9VWvvV2msZIPK3KPPIPw/wC9zJV30ye5rJG7SaiC3p4MuajEIAgCAIAgCAIAgCAXdDwm64cyVuVBwWClh8gANz8vriUWXwhub3minS22rMU8eRb4hwvUV158CyurbmZhuT2L46eg6DPc7yuu6uUviTZfdprq4fA1H+cSWpMW6Srn5CArFsZ5WtJYZHf3SgIMg98LJ4z+xOKxOqvOP3L3HfZm/SkX0H3RufDJyh8x35f06HPWVUauFq7uz8+Zo1fZ9tD72r8uX7EJ9rWdV8eiq503Sw+6QR0JA679hgSfsOy/ck0nyKv+qOUV3sFJrgzm2YkknqTkzelhYOXJ5eWfJ6eCAIAgCAIAgCAWuH6+yhuatiM7EZIBHrg5+vUdpVbTGxYki6m+dTzFnRP7V218q2hb6nQOEtA5gDkY5sb4IO5ByMTAtFCWXF7LT5HUl2lZDCmtqLWd5R4tdoLK/E04em4Efs+qnfcgjIGOvb5S6mOojLZsw49TPqJ6ScNupOMuhLba1rVhSQl5NgKtycluALs9iMrzYPYjBHetRUE2+Md3muRY5SscVHhLfxxh8/Uu1aTVocafiFVg7Dxt/wDC+R+cg50v+pW18i6NWojuquT+fqc3xTht2ncLavKSMjcEEeYI2m+m2Fi9w5WoospliaKcuKBAEAQBAEAQBAJ9FpHucV1rzM3QbDoM99hsJCyyMI7UnuLKqpWS2YLLOmGj16otdmrroRQFCm4IQBtj3Os53eadvajByfkdfutUoqM7VFefoQGhkt8I2tYjpz23c/MppU5blAJxunLknOdtsySkpR20sNPCWOZDYlGew5ZTWW87seBT/srV6tzctTBXJYN0UDtjuQB5eW0u7+mmOw3wM/s2ovl3qi8PmetN7SXUXO1Lfs2dj4bbqck74+6T12nj0kLIJS444nsO0LabG4vdngyxxO/Q6mp7VB094GTX1RzkZ5cDrv6fKQqjfTJQfvR69Cy+el1EHNe7PpyZzc6ByhAEAQBAEAQBAEAu8FprfUVLb8DOA3b6emTgfWU6iUo1tx4mjSxhK2KnwydBqvbawe7Vp6q1X3QGBYgDbG2AMeUxQ7Pi1mUm8nSs7Wknswgkl1M2/jqXfv8ATVHP36ganHrncH5ES9aaVf8ATk/nvMstbG3+rWvNbmfdKoXFYfFdv7TT2H3eWwEr73YZwUbqOh6SM3te81vW5rqv5vRKC2fcT3S3xfR/zczPuZOYrbUUcEhuTbBHXKNt+BAl8drGYyyvH1Ms3HaxOOH4ehqD2WsNPjM61J28YGs49AvNM/tsVPZSy/A1/wDTpuvbcsLx3eplW6BgrOrJYq45mQkhebYZ5lB3x1xNMbk3stNPxMc9O0nJNNLoVJcUCAIAgCAIBZ0+iZ1L5CoCFLtsvMdwNgSTgZ2ErnbGLxxfQurolNbXBdTW0XsvZYhsrtrsC9RUSz/gQv4TJZrYp7MoteZtq7OnKLnCSfl/EZeakyORmIznn/ZgEdiq5P8AmE0rblvykvAxtwi8Ybfju/It8RtaurwztZYAbANgiDdKgO255j64zvmU1RUpbXJcPF82aLpuuGw/ifHwXJF3iPF9Vp7w1drBGVXqHVPDIGAFO23T6Suqim2GJLeuPmXXarUU2bUZPDSx0wetXbXr0Z1QV6pAWZV+G1R1I/nA3x+vZBS00sN5g/yPbJQ1kHJLFi/5fuc1OgckQBAEAQBAEAQBAEAQDY0/F62AGqoW7G3iAmu3Hqy/H9fxmSWnlHfVLHhyN0NXCSxdDa8eD/cv0anhA3NN/wDSWyPyYSmUNZykjVCzs7i4sh4/raNSy+G61V1ry1oyMMdzkoG6mS09dlKe0st8Xkr1l1Woa2HspcFg8CtndA4H2mvkZMnK3oMMoz3bGMH7w2O8ZSi3H4X/AMTzZcpJS+NY/wDpcvmRcU1Zuva7xjW5J91+dWTtyAoDsPp8pOqGxDZ2crqsbyGotdtrntYfR53eAbUW2qKjqWsDEYrRWbJ7Z5gufzjZjB7ahjxbPNudi7tzznkl/oucX4Xo9NUEZnbUnBZVYNy/ynAwPwJlVN91stpYUTRqNNpqYKLbc+nTwKvFuBikVF28PnTmZHPMynOwHKoJ236ADzllOpc3JJZwyjUaJVKLbxlb1xwUOJcPagqGOedBYNsHBzjmB6HaX03KxPHJmfUad0tJ81k88N0TX2rUpALEgE9NgT29BPbbFXByfIhRS7bFBczQ4VwQXXeGLAdmyv7uzKg+7hx3IxkZx3lFupcIbWPujXRolbZsKX2f5ljg/DtI7vTf4lVvReZgMP8Aw5xg59R8s5kLrboxU4YaLdPp9PKTqtzGXLPUhbxdIz1C5qTn3kdSVPkQVDBvngSS2bkpOOfJlbU9NJ1qWz4Nf7K4tIcWNqt1OQV52Yf0hlAHyJAknFOOyofoVqTjJSdn0yXtffm9tQ1f7W0g00YyRsAtjjzOMhe5OenWquPud2n7q4v7I0Wyza7WvefBfdlLX8C1lYNltL4O7Ns3XclsE4+Zl9eppl7sWZ7tFqYpznFlrg3EKLKvs2ryEyTVaPirJ6j+kn/flVfVOEu9q4811LtNfVOHcX8OT6fsXR7Iamm1LK3RkVg4tDBQFBzzEH08syp66uyDjJPPQvXZd1VinFprjnJzGqKmx+X4eZuX5ZOPynQrzsrPQ5FuNt44ZIpMgIAgCAIAgCAIAgCAIBvcK4JS1Qv1N4qrYsEUbu3KcEgfP0MxXamansVxyzpafR1Ovvbp4T+pc/tDhdH7rTve3ZrThfwP/wBZV3Wrs+KWF4F/f6Gn4IOT8TD4nr7NVcXI944Coo6AdFUdZrqqhTDZ/U59109RbtY3+Bf1dT8qfba3rZh7l/L7xx2tX7+3fZh6yiEkm+4afVen8waZxk4paiLXSXr/ADJJpbX0dTvWgd291dUp50VT1A29xj/Ng+k8klfNKTwl/bzJVuWmrbhHLf8Act6S+zIOFa6mhDd+81JYhAwJVP7wk/Exk7ap2SUFuh+vgV6e+umDs42fp4lrhLDkbVup1F5s5UQ5YKwAPiWY7DsOm34VXLeqY+7HG/0Rdp5LZeomtuedy6eLMzWagl2stYW2semcovzI2bHZRt5ntNFcPd2YLEf1MltmZOdjzL9P50I67g5ByK7AQQ491SR0zy/Af5ht5+c9cHFY4roRjNSec4l1NriDfaKGusQ1amoKfFXZLRkAEMu3OOxB3x+GWv8ADmoReYvl0N1r76t2TWJxxv8A8v3Kur4lVqqD455dRWPcsAz4q/wPjoR/FLY0zqs9z4Xy6FNmor1FX4u6a4Pr4M9V6mzVafw3rLtXjw9QSFCL3Wxm2Ix5nM8cY02bUXhPiuvkSVk9RTsTjlrhLp5sh0VKrYtdAF95OzkfskI3yob4iMZ5mwBjoeslZKTjtWe7HpzZCqEYy2Kven15Ly9Sw3DNVpb1tuB97m/bg86hnUqHLdsFgcnykO+qtr2IfQsenvosVk/rxPPCfafVaVyrs1igkPXYSTnvgndT+U9u0dVscx3PqiOn7Rv08sSeVzTNrUcJ0fEB4mldarerVNsM+qjp81yJlhfdpns2LK6m6zTabWLbpajLoc1xxDWa6S4dq6+V+VuZM87sFHnhSB/4m7T4lmeMZe45mrzXs17WcLfh7jLmkxCegQBAEAQBAEAQBAEATwFqjXMq8hCumSQrjIBOMlSCCucdjK5VJvaW5+BdC+UY7LSa8ToOEvo0oOo1FKNlzWtdYYnIAOWL2YHymG5XOzu65PhxZ09M9PGnvbYp78YX+zzd7YlARpaKqB5hQW/QD9ZKOgzvtk2Rl2q47qYKJmsut1hBItt8tjyj5dFWXp0ULdhGZrVap78v+fQl1vCNXoVWxmCFtsI/veeGHcfiJGF9WoezjJK3S6jSJTbxnx/UrDW1WbXVAH/mVAI3zKfA3+U+sn3U4/A/k/XiVK6uf9SPzW78uBHquGlV8RGFtfd1+76Op3Q/PbyJkoXJvZksP+cCNmncY7UHtR6r7rkUZeZhALWk0L2AsMKgPvWOeVAfn3PoMn0lU7IweOfQvrpnNZ4Lq+BY+0UVfu08Zv47RhP+msHf/qJ+Ur2LJ/E8LovUs7ymv4FtPq+H09SDUa2y4qLbDy5AHZFHmFUYGPQScao1puK3lcrp2tKb3fkvkdNp/Zdly+ntW+qxGrLLsy8wxnGdwDjI64ztME9Yn7tiw08nWr7OcfeqltRaa8smTouK6rQOaj0GzUuMoR6eWfMdfWaJ006iO0vqjHXqdRpJbD4dGa2qbQa5OYMuluVejbIQB0z0PkOh9DM8FqNNLGNqJssek1cc52JL6HHETqHDe4T08EAQBAEAQBAEAQBAEAQBAEAm0+pes5RiueuOh+Y6H6yE64y4onCyUH7rOl4f7UUU1qfs5e7HvM3IqZ8xyr+WPrOfZorJy+LEfmdartKquC9zMvlgq6/2y1luwcVr5VjH5nJ/DEtr0FMd73+ZTd2tqJ7k8LwMC2xmPMxLHuScn8TNkYqO5I50pyk8yeTzJESbSap6m5kYqfMdx5EdCPQyE64zWJIsrtnW8xeC+NOmp3qUJd1NI+F/M1Z6H+T8PKUbcqfj3x69PP1NOxC/fBYl06+Xoea9CtSh9QCM7pT8Lt6t3RPzPbznrtdj2a/m+nqzyNEalt3fJc359EVdZrXtI5sALsqKMIo8lHb59T3lldUYcOPUotulZx4dOSK0tKhALXD+IW0NzVOUPfHQ/MdD9ZVZTCxYksl1OospeYPB0lvtPp9VVyayklwPdsqwDn0yfd/MTAtHbVPNMt3RnVl2jTqK9nUR39UcjOmjiMT0CAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIB03A+HLp6vtuoGykGivoXfqpPptn6Z6dedqLnbLuK/m+h19Jp1RD2m35LqyfV0f2lSdRWANTWMXVjo6joyg98dvTHlIwl7LPu5fC+DJ2x9ur72PxriupyU6RxmsCenggCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIB0nsb7P8A2lzZYP2NZ3z0Y9eX5dz/APs5+t1XdrZj8TOr2Zoe+ltz+FfmV/a3jX2q73f3Vfu1jt6t9cfgBLNHp+6hl8WV9o6vv7MR+FcPUpcE4m+luW1e2zL/ABKeo/33AluopV0HFmfSamWntU18/I6P2y4MjoNbp90cBrAO2fv+m+x9frMOi1DjLubOKOp2lo4yj7TTwfH1ONnVOEIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgE2j05tsWsEAuwUE9Bk4yZCyexFy6FlUO8mormdx7W8Qr0mlXR0EZK4Yg7he+cd2P+s5Gjqlda7bDv9oXw01C09X8/wBnAztHzggHZewXGVXm0txHI+eTm6ZPxJv2P6585yu0NO91sOKO72Tq4rNFnB8PQ5/2h4cNNqXrByoOVOc+6dwD6jp9Jt01rtrUnxOZraFTc4LgZs0GUQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAPS1k9AT9JFyS4skoSfBH01sOoP4QpR6hwkuKPIUntmG0uIUW+CDLjYjH5T1NPgeOLXE+qpPQEw2lxCi3wR98Jv4T+E8249SXdz6M8YnpFJk92itQZet1B6FlKj8xIRshLg0WSpsjvkmQqpPQE/LeTbS4lai3wPrVkdQR8xieKSfBnrhJcUeZIiIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAdd7E3OKNaAze7TzKATs2LNx5Hb8py9fFbdfmdrsqUu7tS6epi6biWqWqxizvU6mpuYllywOMZPUYzt5TVKqlySW58TFXdfGEm8uL3b/E3fYB25NWATtUCAP4sPuPWZe0UtqHmbuyG9mzHT1IuFuW0Gp+1klcDwDZkt4mG2Qtv15enr6xbhXw7n546HlDb0tnf8OWeOfAp+wljDXVgEgNzBgOhARjg+e4zLu0EnQ2zP2S2tTFI+6riOqTXXNW7kpZY3LkleRSSQQduXlH/aeQqqlRFSS3pfU9ndfHUycc7m/ovsffZG2t+IBrMDmLlPIO2SOvzOPXE91kZRoxHlj6HvZ0oT1WZ88/U+3aPV6DUC6wMy8+Wcbq4J35vIn17yMZ06ivYjueD2yrUaS3bnvWePUp+ylrLraeUkZcA4OMg9QfMS7VxXcSz0KOz5P2qOObOiu1VrcZarmLVlgrVndOTwwTlTt6zCowWjUufU6cpzfaLhxXTljBynHaK69TalfwK5C/8Ab6Hb6To6eUpVRcuODj6yEYXSjDhkoy8zCAIAgCAIAgCAIAgCAIAgCAIAgCAIB1vsMzCrWlc8wpHKR1zizGJzO0MbVeevodrsnOxbjp6mHTqdTejU87OuDaQzFsBFYkgnpsfqcTXKFVclPGOX1OfCd1sXWnlcfob3sAxC6sg4IpBB9cPMfaO9w8zo9kNqNrXT1Pns8DrtNdp7CXsQeJQ7HLA91yd8ZA/xfKNT/wBvbGyO5PiNHnV0Tqnva3ooeww/4+oH+fI/6Hl2va7hvyM/ZSa1UV5nnifFNR9rvRbHbmssqCFiVIYsgULnHfae101dzGTXBJkbtRd7ROMW97awUK+F2HxgNzQCXA36Nykj5dfkJdK+K2c8JGeOmm9vHGPqdJ7GcfvsuXTWnxa3DA8/vEAKT1PUbYwfOYddpa4w7yO5o6nZmttnYqZ+8n+Rm8PrReKqtfwDUYXvsGMvscnpW5ccGamMY69KHDaJfa3idyay9VsKjIHu+6ccq7ZG/wCcjo6YSpi2j3tHUWR1E4xeDmpvOUJ6BAEAQBAEAQBAEAQBAEAQBAEAQBAEAvaLi+opXlqsZAdyBj89t5TPT1zeZLJoq1VtS2YSwjweJ3crLzkBviAAXPoeUDMKitNPHA8eptw1nifNHxK6kEVWMgPXlOM/Pzns6YTeZLJ5XqLa1iDwfNLr7anL1uysc5YbE53/ANJ7OqE47MluPK77K5bUHhklPFb0saxbCHb4mGMn8pGVFcoqLW5Eo6q2M3OMt7Pf9t6nm5vFPN15sDP44zI+zVYxgn7ZfnO1vK1WssQlldlLfEQxBO+d8dd95Y64SSTXApjdOLbT4k44xeAQH5ebZiiqhPzKqCfxkPZ685aLfa7cNJ4z0wiDR6uyluatireY6yydcZrEluKq7Z1y2oPDGs1llzc9jFmxjJ6xCuMFiKwLbZ2y2pvLIJMrEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAP//Z"
+            alt="MONUEM"
+            class="img-fluid rounded shadow-lg img-experiencia"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMonuem"
+          />
         </div>
-        </section>
 
-        <!-- Navigation -->
-        <a href="#features" class="nav-btn-prev" title="Previous Section">
-            <div class="hexagon">
-                <span class="hex-content">▲</span>
+        <!-- MODAL PEQUENOS TALENTOS -->
+        <div class="modal fade" id="modalPequenosTalentos" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+              <div class="modal-header">
+                <h5 class="modal-title">Pequenos Talentos</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Participei do projeto <strong>Pequenos Talentos</strong> em
+                  2024, que tem como objetivo capacitar jovens no universo da
+                  tecnologia da informação. O projeto também contribuiu para
+                  minha preparação para o ingresso na ETEC.
+                </p>
+                <p>
+                  Durante o programa, desenvolvemos raciocínio lógico,
+                  criatividade e competências socioemocionais. Ao final do ano,
+                  recebi um certificado de conclusão com carga horária
+                  registrada.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
             </div>
-        </a>
-        <a href="#contact" class="nav-btn-next" title="Next Section">
-            <div class="pyramid">
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-face"></div>
-                <div class="pyramid-base"></div>
-                <span class="pyramid-inner">▼</span>
-            </div>
-        </a>
+          </div>
+        </div>
 
+        <!-- MODAL CIASACRO -->
+        <div class="modal fade" id="modalCiaSacro" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+              <div class="modal-header">
+                <h5 class="modal-title">CiaSacro</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Faço parte do projeto social <strong>CiaSacro</strong>, onde
+                  atuo como dançarina. O grupo trabalha dança como expressão
+                  artística, desenvolvimento pessoal e apresentações culturais.
+                </p>
+                <p>
+                  A experiência me ajudou a desenvolver disciplina,
+                  criatividade, trabalho em equipe e presença de palco,
+                  fortalecendo minha relação com a arte.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL HHI -->
+        <div class="modal fade" id="modalHHI" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+              <div class="modal-header">
+                <h5 class="modal-title">HHI Brazil</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Participei do <strong>HHI Brazil</strong> (Hip Hop
+                  International), uma das maiores competições de dança urbana do
+                  mundo.
+                </p>
+                <p>
+                  Essa experiência ampliou minhas habilidades em coreografia,
+                  performance e trabalho em equipe, além de proporcionar contato
+                  com dançarinos de alto nível e diferentes estilos.
+                </p>
+                <p>
+                  Foi um dos momentos mais marcantes da minha jornada na dança,
+                  representando meu grupo em um evento reconhecido
+                  internacionalmente.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL CONECTADOS -->
+        <div class="modal fade" id="modalConectados" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+              <div class="modal-header">
+                <h5 class="modal-title">Conectados – Tecnologia Única</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Participo do projeto <strong>Conectados</strong>, desenvolvido
+                  pela empresa <strong>Tecnologia Única</strong>, voltado para
+                  estudantes do ensino médio.
+                </p>
+                <p>
+                  O programa oferece treinamentos de informática, introdução à
+                  tecnologia, competências digitais e atividades práticas,
+                  preparando os jovens para o mercado de trabalho e ampliando
+                  seus conhecimentos na área de TI.
+                </p>
+                <p>
+                  A experiência tem fortalecido minhas habilidades tecnológicas,
+                  raciocínio lógico e interesse pela área de tecnologia.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL MONUEM -->
+        <div class="modal fade" id="modalMonuem" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+              <div class="modal-header">
+                <h5 class="modal-title">MONUEM</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  O <strong>MONUEM</strong>é um projeto educativo realizado em
+                  São Paulo que simula o funcionamento da
+                  <strong>Organização das Nações Unidas (ONU)</strong> para
+                  estudantes do ensino médio.
+                </p>
+                <p>
+                  O objetivo do MONUEM é desenvolver habilidades como
+                  <strong>negociação, debate e oratória</strong>, além de
+                  ampliar o conhecimento sobre
+                  <strong>relações internacionais</strong> e sobre o cenário
+                  político global.
+                </p>
+                <p>
+                  Durante a simulação, os estudantes atuam como
+                  <strong>diplomatas</strong>, representando países e defendendo
+                  suas posições em comitês, discutindo temas globais e buscando
+                  acordos, assim como acontece na ONU.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <a href="#features" class="nav-btn-prev" title="Previous Section">
+      <div class="hexagon">
+        <span class="hex-content">▲</span>
+      </div>
+    </a>
+    <a href="#contact" class="nav-btn-next" title="Next Section">
+      <div class="pyramid">
+        <div class="pyramid-face"></div>
+        <div class="pyramid-face"></div>
+        <div class="pyramid-face"></div>
+        <div class="pyramid-face"></div>
+        <div class="pyramid-base"></div>
+        <span class="pyramid-inner">▼</span>
+      </div>
+    </a>
 
     <!-- Contact Section -->
     <section class="content-section contact-section-bg" id="contact">
-        <div class="container">
-            <h2 class="section-title">Entre em contato</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Seu nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-input" placeholder="Seu e-mail" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Assunto" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-input form-textarea" placeholder="Mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn gradiente">Enviar mensagem</button>
-                </div>
-                <div class="contact-info">
-                    <h3 class="gradiente">Connect With Us</h3>
-                    <div class="info-item">
-                        <div class="info-icon">GitHub</div>
-                        <span class="info-text">bellateixeira009</span>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📧</div>
-                        <span class="info-text">bellateixeira27@gamil.com</span>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
-                        <span class="info-text">55+ (11)98289-4808</span>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <span class="info-text">123 Design Street, Creative City, DC 12345</span>
-                    </div>
-                    
-                </div>
+      <div class="container">
+        <h2 class="section-title">Entre em contato</h2>
+        <div class="contact-content">
+          <div class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Seu nome"
+                required
+              />
             </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Assunto"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-input form-textarea"
+                placeholder="Mensagem"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn gradiente">
+              Enviar mensagem
+            </button>
+          </div>
+          <div class="contact-info">
+            <h3 class="gradiente">Connect With Us</h3>
+            <div class="info-item">
+              <div class="info-icon">GitHub</div>
+              <span class="info-text">bellateixeira009</span>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <span class="info-text">bellateixeira27@gamil.com</span>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📱</div>
+              <span class="info-text">55+ (11)98289-4808</span>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <span class="info-text"
+                >123 Design Street, Creative City, DC 12345</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Navigation -->
-        <a href="#gallery" class="nav-btn-prev" title="Previous Section">
-            <div class="hexagon">
-                <span class="hex-content">▲</span>
-            </div>
-        </a>
+      <!-- Navigation -->
+      <a href="#gallery" class="nav-btn-prev" title="Previous Section">
+        <div class="hexagon">
+          <span class="hex-content">▲</span>
+        </div>
+      </a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#hero" class="footer-link">Home</a>
-                <a href="#about" class="footer-link">Sobre mim</a>
-                <a href="#features" class="footer-link">Projetos</a>
-                <a href="#gallery" class="footer-link">Experiências</a>
-                <a href="#contact" class="footer-link">Contato</a>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-copyright">
-                <p>© 2048 Parallax Depth Experience. All rights reserved.</p>
-                <p>Design: <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">Sobre mim</a>
+          <a href="#features" class="footer-link">Projetos</a>
+          <a href="#gallery" class="footer-link">Experiências</a>
+          <a href="#contact" class="footer-link">Contato</a>
         </div>
+        <div class="footer-divider"></div>
+        <div class="footer-copyright">
+          <p>© 2048 Parallax Depth Experience. All rights reserved.</p>
+          <p>
+            Design:
+            <a
+              href="https://www.tooplate.com"
+              target="_blank"
+              rel="nofollow noopener"
+              >Tooplate</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
-<script src="tooplate-2144-parallax-scripts.js"></script>
-<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
-</body>
+    <script src="tooplate-2144-parallax-scripts.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
